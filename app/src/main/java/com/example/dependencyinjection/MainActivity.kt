@@ -17,7 +17,9 @@ class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
-        val authManager = AuthManager()
+        val signInService = SignInService()
+        val emailService = EmailService()
+        val authManager = AuthManager(signInService, emailService)
         authManager.login("user@example.com", "password123")
         setContent {
             DependencyInjectionTheme {
