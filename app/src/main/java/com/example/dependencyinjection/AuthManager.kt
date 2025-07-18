@@ -1,6 +1,8 @@
 package com.example.dependencyinjection
 
-class AuthManager(
+import javax.inject.Inject
+
+class AuthManager @Inject constructor(
     private val signInService: SignInService,
     private val emailService: EmailService
 ){
