@@ -5,6 +5,6 @@ import dagger.Component
 @Component
 interface AuthManagerComponent {
 
-    fun getAuthManager() : AuthManager
+    fun inject(mainActivity: MainActivity)
 
 }
