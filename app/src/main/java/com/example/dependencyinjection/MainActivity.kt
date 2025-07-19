@@ -10,7 +10,7 @@ class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
-        val authManager = DaggerAuthManagerComponent.builder().build().getAuthManager()
+        val authManager = DaggerAuthManagerComponent.create().getAuthManager()
         authManager.login("user@example.com", "password123")
         setContent {
             DependencyInjectionTheme {
