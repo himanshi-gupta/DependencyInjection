@@ -1,10 +1,11 @@
 package com.example.dependencyinjection
 
 import javax.inject.Inject
+import javax.inject.Named
 
 class AuthManager @Inject constructor(
     private val signInService: SignInService,
-    private val notificationService: NotificationService
+    @Named("email") private val notificationService: NotificationService
 ){
     fun login(email: String, password: String){
         signInService.signIn(email, password)
