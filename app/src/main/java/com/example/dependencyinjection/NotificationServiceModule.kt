@@ -1,17 +1,18 @@
 package com.example.dependencyinjection
 
-import dagger.Binds
 import dagger.Module
 import dagger.Provides
 
 @Module
-abstract class NotificationServiceModule {
+class NotificationServiceModule {
 
-//    @Provides
-//    fun getMessageService() : NotificationService{
-//        return MessageService()
-//    }
+    @Provides
+    fun getMessageService() : NotificationService{
+        return MessageService()
+    }
 
-    @Binds
-    abstract fun getEmailService(emailService: EmailService) : NotificationService
+    @Provides
+    fun getEmailService(emailService: EmailService) : NotificationService{
+        return emailService
+    }
 }
