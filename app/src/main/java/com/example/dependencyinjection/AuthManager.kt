@@ -4,10 +4,10 @@ import javax.inject.Inject
 
 class AuthManager @Inject constructor(
     private val signInService: SignInService,
-    private val emailService: EmailService
+    private val notificationService: NotificationService
 ){
     fun login(email: String, password: String){
         signInService.signIn(email, password)
-        emailService.send(to = email, from = "noreply@app.com",body = "Welcome to App")
+        notificationService.send(to = email, from = "noreply@app.com",body = "Welcome to App")
     }
 }
