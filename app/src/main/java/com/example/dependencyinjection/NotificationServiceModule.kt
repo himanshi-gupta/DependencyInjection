@@ -6,8 +6,13 @@ import dagger.Provides
 @Module
 class NotificationServiceModule {
 
+//    @Provides
+//    fun getMessageService() : NotificationService{
+//        return MessageService()
+//    }
+
     @Provides
-    fun getMessageService() : NotificationService{
-        return MessageService()
+    fun getEmailService(emailService: EmailService) : NotificationService{
+        return emailService
     }
 }
