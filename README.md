@@ -12,6 +12,8 @@ Welcome! This repository contains the code examples for my blog series on Depend
 | ✅ Part 2 | Manual Dependency Injection | [Read](https://guptahimanshi.medium.com/️-part-2-manual-dependency-injection-the-first-step-3a3beac51680) | [`manual_di`](https://github.com/himanshi-gupta/DependencyInjection/tree/manual_di) |
 | ✅ Part 3 | Dagger 2: Constructor Injection  | [Read](https://medium.com/@guptahimanshi/️-part-3-dagger-2-deep-dive-constructor-vs-field-injection-cc9bbe846f7f) | [`dagger_contructor_injection`](https://github.com/himanshi-gupta/DependencyInjection/tree/dagger_contructor_injection) & [`dagger_field_injection`](https://github.com/himanshi-gupta/DependencyInjection/tree/dagger_field_injection)|
 | ✅ Part 4  | Dagger 2 with Interfaces | [Read](https://guptahimanshi.medium.com/part-4-dagger-2-with-interfaces-decoupling-like-a-pro-492f7079c04d) | [`dagger_interfaces`](https://github.com/himanshi-gupta/DependencyInjection/tree/dagger_interfaces) |
+| ✅ Part 5  | Dagger 2 with Qualifier | [Read](https://guptahimanshi.medium.com/part-5-dagger-2-with-qualifier-type-safe-dependency-injection-9083d41bec10) | [`dagger_qualifier`](https://github.com/himanshi-gupta/DependencyInjection/tree/dagger_qualifier) |
+
 
 > Each branch includes a runnable Kotlin project that reflects the implementation discussed in that specific blog post.
 
